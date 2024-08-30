@@ -39,7 +39,7 @@ for season in seasons:
         team_df.insert(loc=0,column='Season',value=season)
 
         #Insert team column
-        team_df.insert(loc=2,column='Team',value=team.upper())
+        team_df.insert(loc=2,column='team',value=team.upper())
 
         #Step 5: Concatenate the team gamelog to the aggregate dataframe
         nfl_df=pd.concat([nfl_df,team_df],ignore_index=True)
